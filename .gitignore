@@ -1,4 +1,14 @@
-gitignore
+# Python
 __pycache__/
 *.pyc
+
+# Logs
 *.log
+
+# Archivos generados
+Gestion_inteligente_clientes/datos/clientes.csv
+Gestion_inteligente_clientes/reportes/*.txt
+
+# Entornos
+venv/
+.env
