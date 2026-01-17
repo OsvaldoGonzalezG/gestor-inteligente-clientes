@@ -29,22 +29,8 @@ Gestion_inteligente_clientes/
 ├── main.py
 ├── diagrama_clases.puml
 ├── modulos/
-│ ├── cliente.py
-│ ├── cliente_regular.py
-│ ├── cliente_premium.py
-│ ├── cliente_corporativo.py
-│ ├── gestor_clientes.py
-│ ├── validaciones.py
-│ ├── archivos.py
-│ ├── excepciones.py
-│ └── logger_config.py
-├── datos/
-│ ├── clientes_entradas.csv
-│ └── clientes.csv
-├── reportes/
-│ └── resumen.txt
-└── logs/
-└── app.log
+│   ├── ...
+└── ...
 
 
 ---
