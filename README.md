@@ -1,10 +1,8 @@
 # Gestor Inteligente de Clientes (GIC)
 
-Sistema desarrollado en Python que permite la gestión de distintos tipos de clientes aplicando
-los principios de la Programación Orientada a Objetos (POO).
+Sistema desarrollado en Python que permite la gestión de distintos tipos de clientes aplicando los principios de la Programación Orientada a Objetos (POO).
 
-El proyecto fue desarrollado como parte de un módulo académico, incorporando buenas prácticas
-de diseño, validación de datos, manejo de excepciones y persistencia mediante archivos.
+El proyecto fue desarrollado con fines académicos, incorporando buenas prácticas de diseño, validación de datos, manejo de excepciones, persistencia mediante archivos y registro de eventos.
 
 ---
 
@@ -25,9 +23,7 @@ de diseño, validación de datos, manejo de excepciones y persistencia mediante 
 
 ## 🧱 Estructura del proyecto
 
-## 🧱 Estructura del proyecto
-
-
+```text
 Gestion_inteligente_clientes/
 ├── main.py
 ├── diagrama_clases.puml
@@ -42,12 +38,12 @@ Gestion_inteligente_clientes/
 │   ├── excepciones.py
 │   └── logger_config.py
 ├── datos/
+│   ├── clientes_entradas.csv
+│   └── clientes.csv
 ├── reportes/
+│   └── resumen.txt
 └── logs/
-
-
-
----
+    └── app.log
 
 ## ▶️ Ejecución del proyecto
 
@@ -55,6 +51,8 @@ Desde la carpeta raíz del proyecto:
 
 
 python main.py
+
+El sistema se ejecuta mediante un menú interactivo por consola que permite acceder a todas las funcionalidades disponibles.
 
 📊 Archivos generados
 
@@ -69,15 +67,12 @@ Registro de eventos relevantes del sistema (altas, bajas y modificaciones).
 
 🧠 Diseño del sistema
 
-El sistema fue diseñado utilizando un diagrama de clases UML, el cual se encuentra
-disponible en el archivo diagrama_clases.puml.
-Este diagrama representa la estructura del sistema, las relaciones entre clases y
-la aplicación de herencia y polimorfismo.
+El sistema fue diseñado utilizando un diagrama de clases UML, disponible en el archivo diagrama_clases.puml.
+Este diagrama representa la estructura del sistema, las relaciones entre clases y la aplicación de herencia y polimorfismo.
 
 📄 Documentación
 
-El proyecto cuenta con un informe detallado que describe el diseño, funcionamiento,
-pruebas realizadas y conclusiones del sistema.
+El proyecto cuenta con un informe detallado que describe el diseño, funcionamiento, pruebas realizadas y conclusiones del sistema.
 
 ✍️ Autor
 
