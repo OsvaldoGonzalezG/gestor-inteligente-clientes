@@ -1,0 +1,114 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' =========================
+' Logger
+' =========================
+class LoggerConfig {
+    +get_logger(): object
+}
+
+' =========================
+' Cliente base
+' =========================
+class Cliente {
+    -_id: int
+    -_nombre: str
+    -_email: str
+    -_telefono: str
+    -_direccion: str
+    +__init__(id: int, nombre: str, email: str, telefono: str, direccion: str)
+    +mostrar_info(): str
+    +to_dict(): dict
+    +__str__(): str
+}
+
+' =========================
+' Tipos de Cliente
+' =========================
+class ClienteRegular {
+    +beneficio_regular(): str
+    +mostrar_info(): str
+}
+
+class ClientePremium {
+    -_nivel: str
+    +__init__(id: int, nombre: str, email: str, telefono: str, direccion: str, nivel: str)
+    +beneficio_exclusivo(): dict
+    +mostrar_info(): str
+    +to_dict(): dict
+}
+
+class ClienteCorporativo {
+    -_empresa: str
+    -_contacto: str
+    +__init__(id: int, nombre: str, email: str, telefono: str, direccion: str, empresa: str, contacto: str)
+    +beneficio_corporativo(): dict
+    +mostrar_info(): str
+    +to_dict(): dict
+}
+
+Cliente <|-- ClienteRegular
+Cliente <|-- ClientePremium
+Cliente <|-- ClienteCorporativo
+
+' =========================
+' Gestor
+' =========================
+class GestorClientes {
+    -_clientes: list
+    +agregar(cliente: Cliente): None
+    +listar(): list
+    +buscar_por_id(id: int): Cliente
+    +actualizar(id: int, **campos): None
+    +eliminar(id: int): None
+    +existe_email(email: str, excluir_id: int = None): bool
+    +resumen_por_tipo(): dict
+}
+
+GestorClientes "1" o-- "*" Cliente
+GestorClientes ..> LoggerConfig
+
+' =========================
+' Validaciones
+' =========================
+class Validaciones {
+    +validar_no_vacio(valor: str, campo: str): None
+    +validar_email(email: str): None
+    +validar_telefono(telefono: str): None
+    +validar_direccion(direccion: str): None
+}
+
+' =========================
+' Archivos
+' =========================
+class Archivos {
+    +importar_csv(ruta: str): list
+    +exportar_csv(ruta: str, clientes: list): None
+    +generar_reporte_txt(ruta: str, gestor: GestorClientes): None
+}
+
+Archivos ..> GestorClientes
+
+' =========================
+' Excepciones
+' =========================
+class GICError
+class ClienteExistenteError
+class ClienteNoEncontradoError
+class EmailInvalidoError
+class TelefonoInvalidoError
+class DireccionInvalidaError
+class ArchivoError
+
+GICError <|-- ClienteExistenteError
+GICError <|-- ClienteNoEncontradoError
+GICError <|-- EmailInvalidoError
+GICError <|-- TelefonoInvalidoError
+GICError <|-- DireccionInvalidaError
+GICError <|-- ArchivoError
+
+Validaciones ..> GICError
+Archivos ..> ArchivoError
+
+@enduml

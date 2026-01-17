@@ -1,0 +1,12 @@
+2026-01-17 09:55:50,579 | INFO | Alta cliente: 1 (ClienteRegular)
+2026-01-17 09:55:50,579 | INFO | Alta cliente: 2 (ClientePremium)
+2026-01-17 09:55:50,579 | INFO | Alta cliente: 3 (ClienteCorporativo)
+2026-01-17 09:55:50,579 | INFO | Actualización cliente: 2
+2026-01-17 09:55:50,580 | INFO | Baja cliente: 1
+2026-01-17 09:55:50,580 | WARNING | Intento de alta duplicada por email: laura.gomez@mail.com
+2026-01-17 09:58:20,823 | INFO | Alta cliente: 1 (ClienteRegular)
+2026-01-17 09:58:20,823 | INFO | Alta cliente: 2 (ClientePremium)
+2026-01-17 09:58:20,823 | INFO | Alta cliente: 3 (ClienteCorporativo)
+2026-01-17 09:58:20,824 | INFO | Actualización cliente: 2
+2026-01-17 09:58:20,824 | INFO | Baja cliente: 1
+2026-01-17 09:58:20,824 | WARNING | Intento de alta duplicada por email: laura.gomez@mail.com

@@ -1,0 +1,4 @@
+tipo,id,nombre,email,telefono,direccion,nivel,empresa,contacto
+regular,1,Ana Perez,ana.perez@mail.com,+56912345678,Av Siempre Viva 256,,,
+premium,2,Carlos Ruiz,carlos.ruiz@mail.com,+56987654321,Calle papitas 456,gold,,
+corporativo,3,Laura Gomez,laura.gomez@mail.com,+56911112222,Oficina 27,,SolutionCorp,Hernan Soto

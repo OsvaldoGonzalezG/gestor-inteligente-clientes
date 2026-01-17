@@ -1,0 +1,40 @@
+Reporte resumen - GIC
+=====================
+
+Total clientes: 3
+Regular: 1
+Premium: 1
+Corporativo: 1
+
+--- Detalle y Beneficios (extra) ---
+
+[Premium]
+Distribución por nivel:
+  - Silver: 0
+  - Gold: 1
+  - Platinum: 0
+Descuento promedio premium: 10.00%
+
+ID | Nombre | Nivel | Desc% | SLA(h) | Envío Gratis | Email
+------------------------------------------------------------------------------
+2 | Carlos Ruiz | gold | 10 | 8 | Sí | carlos.ruiz@mail.com
+
+
+[Corporativo]
+Descuento volumen promedio: 12.00%
+Facturación promedio: 30.00 días
+
+ID | Nombre | Empresa | Ejecutivo | DescVol% | Fact(d) | Email
+----------------------------------------------------------------------------------
+3 | Laura Gomez | SolutionCorp | Hernan Soto | 12 | 30 | laura.gomez@mail.com
+
+
+[Regular]
+Beneficio: acceso a promociones estándar (sin descuento fijo).
+
+ID | Nombre | Email
+--------------------------------------------------
+1 | Ana Perez | ana.perez@mail.com
+
+
+Fin del reporte.
